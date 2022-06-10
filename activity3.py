@@ -1,6 +1,9 @@
 
 #! 1st activity -
 
+from re import X
+
+
 c_dict = {
     "uk":"london",
     "france":"paris",
@@ -83,12 +86,16 @@ removeSongFromFavBySongName('rap god')
 printSongs()
 
 def updateSongByID(toEdit):
+    artist_name = input('Type here: ')
+    song_name = input('Type here: ')
+    genre_name = input('Type here: ')
+    year_name = input('Type here: ')
     for i in range(len(fav_songs)):
         if fav_songs[i]['id'] == toEdit:
-            fav_songs[i]['artist'] = 'batman'
-            fav_songs[i]['song_name'] = 'batman theme'
-            fav_songs[i]['genre'] = 'awesome'
-            fav_songs[i]['year'] = '1970'
+            fav_songs[i]['artist'] = artist_name
+            fav_songs[i]['song_name'] = song_name
+            fav_songs[i]['genre'] = genre_name
+            fav_songs[i]['year'] = year_name
             break 
 
 updateSongByID(2)

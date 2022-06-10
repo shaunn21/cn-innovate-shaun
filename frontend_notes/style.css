@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+li {
+    display: inline;
+    
+}
+li a:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+#para{
+    color: aqua; 
+    font-family: 'myFirstFont', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;       
+}
+
+#container {
+    display: flex;
+    width: 1000px;
+    height: 1000px;
+    font-size: clamp(12px, 34px, 86px);
+}
+
+#box {
+    display: flex;
+    width: 1000px;
+    height: 1000px;
+    font-size: clamp(12px, 34px, 86px);
+}
+
+
+#one {
+    background-color: blue;
+    width: 100vh; 
+    /* This makes the view width 100% of the screen - but minus with the other elements. */
+}
